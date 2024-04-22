@@ -1,0 +1,290 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.light{
+    background-color: #e3e3e3;
+    color: black;
+}
+
+.btnRkndo {
+    padding: 0.5rem 1rem;
+    background-color: #e3e3e3;
+    border-radius: 0.5rem;
+    font-size: 1em;
+    font-weight: 800;
+    margin: 10% 0;
+}
+.btnRkndo:hover {
+    background-color: black;
+    color: white;
+}
+
+.title {
+    background-image: url(../assets/img/grunge.jpeg);
+    color: white;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    padding: 1rem;
+}
+.shopDisplay{
+    width: 95%;
+}
+
+.col-md-9 {
+    padding-right: 15px; 
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    padding: 0.8rem;
+    margin: 0.5rem;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    transition: opacity 0.3s;
+    z-index: 1;
+}
+
+.overlay-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+
+
+
+.col-md-3 {
+    padding-left: 15px; 
+}
+.cart{
+    position: sticky;
+    top: 20px;
+    background-color: #e3e3e3;
+    padding: 1rem;
+    border-radius: 0.5em;
+    color: #000;
+}
+.cart-size{
+    width: 80px;
+}
+.priceTotal{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.btnClearCart{
+    margin: 0.5rem;
+}
+.btnPayment{
+    margin: 0.5rem;
+}
+.btnBuyIddle{
+    background-color: #000;
+    color: white;
+    padding: 1rem 2rem;
+}
+.btnBuyHover{
+    background-color: #39ff07;
+    color: black;
+    padding: 1rem 2rem;
+}
+.tst{
+    color: #000;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm{
+    background-color: #000;
+}
+
+.smallForm{
+    font-size: 1rem;
+}
+
+
+.menu{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.newsletterContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 10%;
+}
+
+.newsletterInfo {
+    color: black;
+    background-color: white;
+    margin: -3rem 1rem 2rem;
+    padding: 10% 10%;
+    font-size: 1.5em;
+}
+
+.content {
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.subscription {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.subscription .add-email {
+    border: none;
+    padding: 0.8rem 1rem;
+    outline: none;
+}
+
+.subscription .submit-email {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100% - 2px);
+    width: 100px;
+    border: none;
+    border-radius: 8px;
+    margin: 1px;
+    padding: 0 20px;
+    background: #e3e3e3;
+    color: #000;
+}
+.submit-email{
+    background-color: #333131;
+    border: #666666 1px solid;
+}
+.submit-email:hover {
+    color: white;
+    background-color: black;
+    border: #000 1px solid;
+}
+
+.newsletterImage img {
+    width: 100%;
+}
+
+
+footer {
+    background-color: #666666;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0 1rem 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+    font-size: 2.2em;
+}
+
+.fa-twitter {
+    color: white;
+    font-size: 2.2em;
+}
+
+.fa-facebook {
+    color: white;
+    font-size: 2.2em;
+}
+
+.footer p {
+    margin-top: -0.5em;
+}
+
+.displayWeb {
+    display: none;
+}
+
+.displayMobile {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .newsletterContainer {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 3rem 0;
+    }
+
+    .newsletterInfo {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin: 2.5rem;
+        z-index: 1;
+        position: relative;
+        display: grid;
+        align-content: space-between;
+    }
+
+    .newsletterImage {
+        grid-column-start: 4;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        z-index: -1;
+    }
+
+    footer {
+        margin: 10% 0 0 0;
+    }
+
+    .footer p {
+        margin-top: 0;
+    }
+
+    .displayMobile {
+        display: none;
+    }
+
+    .displayWeb {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mainNewsContainer {
+        margin: 0 15%;
+    }
+
+    .newsletterInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .footer a i {
+        font-size: 1.4em;
+    }
+}
